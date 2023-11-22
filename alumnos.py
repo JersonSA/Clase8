@@ -37,3 +37,12 @@ def alumnos():
             print(alumno[0]+"\t" +str(round(promedio,1)))
 
 
+    if len(alumnos) > 0:
+        print("\nListado de los alumnos que pierden la materia")
+        print("Nombre\tPromedio")
+        for alumno in alumnos:
+            promedio = (alumno[1]+alumno[2]+alumno[3])/3
+            if promedio < 3:
+                print(alumno[0]+"\t" +str(round(promedio, 1)))
+
+
